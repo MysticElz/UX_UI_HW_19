@@ -1,0 +1,269 @@
+$color: #ac00f6;
+
+.navigation a {
+  margin: auto;
+  position: relative;
+  display: block;
+  font-weight: 100;
+  background: #ffffff;
+  border: 1px solid rgba($color, 1);
+  text-decoration: none;
+  color: $color;
+  padding: 15px 20px;
+  transition: .225s ease all;
+  overflow: hidden;
+  will-change: transform;
+  box-shadow: 3px 3px 0px rgba($color, 0.5);
+
+  &:hover, &:focus {
+    cursor: pointer;
+    transform: translate(-4px, -4px);
+    box-shadow: 7px 7px 0px rgba($color, 0.3);
+    color: black;
+  }
+
+  &.clicked {
+    cursor: pointer;
+    transform: translate(3px, 3px) !important;
+    box-shadow: 0px 0px 0px rgba($color, 1) !important;
+    border: 1px solid rgba($color, 0.5);
+  }
+}
+
+.Home {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+    background-image: url("../imgs/Background.png");
+    background-size: 85%;
+  }
+  /* My PROJECT section coded using CSS flex */
+  
+  
+  .menuBar {
+  
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+  align-items: center;
+  
+  
+  
+  }
+  
+  #NavG {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  
+  }
+  
+  
+  .mainLogo {
+  
+  width: 25%;
+  }
+  
+  
+  .Projects-html {
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    background-image: url("../imgs/Background-Projects.png");
+    background-size: 100%;
+  }
+  
+  
+  
+  
+  .projects {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  
+  }
+  
+  .projectArea{
+  width: 25%;
+  }
+  
+  /* My Project section coded using CSS flex ENDS*/
+  
+  .skills-html {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /*height:x;*/
+  margin: 0;
+  text-align: center;
+  background-image: url("../imgs/Background-Projects.png");
+  background-size: 100%;
+  }
+  
+  
+  .uxSkills {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  
+  }/* My SKILLS section coded using CSS flex */
+  
+  
+  
+  #mySkills {
+  min-width: 50%;
+  max-width: auto;
+  max-height: 30px;
+  font-size: 20px;
+  font-weight: 300;
+  word-wrap: break-word;
+  margin: auto;
+  color: #000000;
+  }
+  
+  
+  
+  
+  /* My SKILLS section coded using CSS flex ENDS*/
+  
+  
+  #mainGrid {
+    margin: 100px 20%;
+    display:grid;
+    min-height:500px;
+    scale: 75%;
+    height: 500px;
+    width: 100%;
+    right: 100px;
+    /*grid-template-rows: 75% 25%;*/
+    grid-template-columns: 70% 30%;
+    grid-template-areas: 
+    "heroImage aboutMe";
+  }
+  
+  
+  #heroImage {
+    grid-area: heroImage;
+    background-image: url("../imgs/Selfie.png");
+    
+  }
+  
+  #social-links {
+    font-size: 60px;
+    text-decoration: none;
+    align-items: flex-end;
+    
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-linkedin {
+    color: black;
+  }
+  
+  .fa-pinterest {
+    color: black;
+  }
+  
+  .fa-instagram {
+    color: black;
+  }
+  
+  
+  #headline {
+    background-color: rgba(255,255,255,0.8);
+    border: 2px solid #7a5ce9;
+    position: absolute;
+    right: 100px;
+    top: 200px;
+    padding: 70px;
+    max-width: 600px;
+    border-style: dotted;
+    border-radius: 2%;
+   
+   
+  }
+  
+  
+  .leftGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+  
+  h2 {
+    font-size: 60px;
+    margin: 0px 0px;
+    color: #000000;
+  }
+  
+  
+  
+  
+  
+  #footer {
+    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;            /* Footer height */
+  }
+  /*@media only screen and (max-width: 1000px) {
+    #navigation {
+      display: none;
+    }
+    .icons {
+      margin-left: auto;
+    }
+  }*/
+  
+  @media only screen and (max-width: 600px) {
+    #headline {
+      position: static;
+      margin: 20px;
+    }
+    #mainGrid {
+        /*grid-template-rows: 75% 25%;*/
+        grid-template-columns: 75% 25%;
+        grid-template-areas:
+        "profilePhoto aboutMe";
+      }
+      .projects {
+        flex-direction: column;
+      }    
+  
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2px;            /* Footer height */
+      }
+  
+    }
+  
+  
+        
+
